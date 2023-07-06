@@ -1,19 +1,18 @@
 import Image from "next/legacy/image";
 function ProjectItem({ data }) {
-    const title = data.properties.title.title[0].plain_text
-    const githubLink = data.properties.Github.url 
-    const description = data.properties.Description.rich_text[0].plain_text 
-    const siteLink = data.properties.DeploySite.url
-    const startDate = data.properties.WorkPeriod?.date.start
-    const endDate = data.properties.WorkPeriod?.date.end
+    const title = data.properties.title.title[0]?.plain_text
+    const githubLink = data.properties.Github?.url 
+    const description = data.properties.Description.rich_text[0]?.plain_text 
+    const siteLink = data.properties.DeploySite?.url
+    const startDate = data.properties.WorkPeriod?.date?.start
+    const endDate = data.properties.WorkPeriod?.date?.end
     const tags = data.properties.Tag.multi_select
-    const img = data.cover.file?.url || data.cover.external?.url
+    const img = data.cover?.file?.url || data.cover?.external?.url
     
  
     const calculatedPeriod = (start, end) => {
-        const startDateStringArray = start.split('-');
-        const endDateStringArray = end.split('-');
-
+        const startDateStringArray = (start||'').split('-');
+        const endDateStringArray = (end||'').split('-');
         var startDate = new Date(startDateStringArray[0], startDateStringArray[1], startDateStringArray[2]);
         var endDate = new Date(endDateStringArray[0], endDateStringArray[1], endDateStringArray[2]);
 
@@ -23,7 +22,6 @@ function ProjectItem({ data }) {
         const diffInMs = Math.abs(endDate - startDate);
         const result = diffInMs / (1000 * 60 * 60 * 24);
 
-        console.log(`기간 : ${result}`)
         return result;
     };
     return(

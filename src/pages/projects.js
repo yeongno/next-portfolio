@@ -55,11 +55,11 @@ export async function getStaticProps() {
   const projects = await res.json()
 
   
-  const projectNames = projects.results?.map((aProject) => (
-    aProject.properties.title.title[0].plain_text
-  ))
+  // const projectNames = projects.results?.map((aProject) => (
+  //   aProject.properties.title.title[0]?.plain_text
+  // ))
   
   return {
-    props: {projects, projectNames},
+    props: {projects},
   }
 }
