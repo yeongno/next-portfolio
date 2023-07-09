@@ -12,6 +12,7 @@ function Hero() {
         <div className="flex justify-center">
             <Link href="/projects">
                   <span className="btn-project">프로젝트 보러가기</span>
+                  <span>on develop</span>
           </Link>
         </div>
       </div>
