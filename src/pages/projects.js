@@ -6,7 +6,7 @@ export default function Projects({ projects }) {
     return(
         <>
         <Layout >
-          <div className="flex flex-col items-center justify-center min-h-screen px-5 py-24 mb-10 px-6">
+          <div className="flex flex-col items-center justify-center min-h-screen px-5 py-10 mb-10">
         <Head>
         <title>이영노 포트폴리오</title>
         <meta name="description" content='오늘도 코딩' />
@@ -14,11 +14,11 @@ export default function Projects({ projects }) {
       </Head> 
             <h1 className="text-5xl font-bold sm:text-6xl">
               총 프로젝트 :
-              <span className="pl-4 text-blue-500">
+              <span className="pl-4 text-blue-500 dark:text-blue-500">
                 {projects.results.length}
               </span>
             </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-10 m-6 s:w-full" >
+          <div className="grid grid-cols-1 gap-8 py-10 m-6 md:grid-cols-2 s:w-full" >
           {projects.results?.map((aProject) => (
             // <h1>{aProject.properties.title.title[0].plain_text}</h1>
             <ProjectItem key={aProject.id} data={aProject} />
