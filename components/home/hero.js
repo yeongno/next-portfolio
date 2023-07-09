@@ -11,7 +11,8 @@ function Hero() {
         <p className="mb-8 leading-relaxed">없으면 청춘에서만 때에, 무엇을 사막이다. 꽃이 피고 대한 바로 청춘 이것이다. 힘차게 수 자신과 바이며, 하는 이상의 구하지 풍부하게 사막이다. 사랑의 관현악이며, 꽃이 않는 피가 인생을 그들의 없으면, 황금시대다. 아니더면, 피고, 수 있는 만천하의 내려온 이상 것이다. 속에 위하여서 위하여 가는 열락의 얼마나 두기 인생의 새 있는가? 찾아다녀도, 눈이 그들의 우리의 구하지 목숨을 사막이다. 속잎나고, 하는 있는 사막이다. 공자는 유소년에게서 인류의 불러 보는 봄바람을 뜨고, 살 갑 듣는다.</p>
         <div className="flex justify-center">
             <Link href="/projects">
-          <span className="btn-project">프로젝트 보러가기</span>
+                  <span className="btn-project">프로젝트 보러가기</span>
+                  <span>check sourcetree</span>
           </Link>
         </div>
       </div>
