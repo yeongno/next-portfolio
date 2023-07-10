@@ -2,11 +2,14 @@ import Head from 'next/head'
 import Hero from '../../components/home/hero'
 import Layout from '../../components/layout'
 import SkillStack from '../../components/home/skill-stack'
-
+import { useEffect } from 'react';
+import { useDispatch } from "react-redux";
+import { test1 } from '../../store/actions/test';
 export default function Home() {
+
+  
   return (
     <Layout >
-      
       <section className="flex flex-col items-center justify-start text-gray-600 body-font">
     <div className="container flex flex-col items-center px-5 py-2 mx-auto md:flex-row">
           <Hero />
