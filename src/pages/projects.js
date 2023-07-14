@@ -2,7 +2,11 @@ import Head from "next/head";
 import Layout from "../../components/layout";
 import { DATABASE_ID, TOKEN } from "../../config";
 import ProjectItem from "../../components/projects/project-item";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+
 export default function Projects({ projects }) {
+
     return(
         <>
         <Layout >
@@ -53,11 +57,6 @@ export async function getStaticProps() {
   const res = await fetch(`https://api.notion.com/v1/databases/${DATABASE_ID}/query`, options)
   
   const projects = await res.json()
-
-  
-  // const projectNames = projects.results?.map((aProject) => (
-  //   aProject.properties.title.title[0]?.plain_text
-  // ))
   
   return {
     props: {projects},

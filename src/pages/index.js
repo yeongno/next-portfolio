@@ -5,9 +5,9 @@ import SkillStack from '../../components/home/skill-stack'
 import { useEffect } from 'react';
 import { useDispatch } from "react-redux";
 import { test1 } from '../../store/actions/test';
+import { DATABASE_ID, TOKEN } from '../../config';
+import getStaticProps1 from '@/hook/get-notion-db';
 export default function Home() {
-
-  
   return (
     <Layout >
       <section className="flex flex-col items-center justify-start text-gray-600 body-font">
@@ -18,7 +18,7 @@ export default function Home() {
       <section >
         <section className="py-8 bg-gray-200 dark:bg-slate-600">
           <div className="container mx-auto">
-            <h2 class="text-3xl font-bold mb-4 ml-2">Skill Stack</h2>
+            <h2 className="mb-4 ml-2 text-3xl font-bold">Skill Stack</h2>
             <div className="flex flex-col items-center justify-start px-2 py-2 text-gray-600 body-font">
                 <SkillStack />
             </div>
