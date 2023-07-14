@@ -13,6 +13,7 @@ function Hero() {
               웹 개발자를 목표로 하고 있습니다.<br />
               웹 개발에 열정을 가지고 있으며, 새로운 아이디어를 현실로 구현하는 것을 좋아합니다. <br />
               사용자 경험을 개선하고 혁신적인 기술을 적용하여 웹을 더욱 흥미롭고 유용하게 만드는 것이 목표입니다.
+              
         </p>
         <div className="flex justify-center">
             <Link href="/projects">
