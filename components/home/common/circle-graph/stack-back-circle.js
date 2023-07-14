@@ -2,7 +2,7 @@
 export default function BackCircle() {
 
   return (<div>
-    {/* <div className="bg-gray-300">BackEnd</div> */}
+    <div className="w-1/2 bg-gray-300">BackEnd</div>
     <div class="card">
                       <span class="inline-block bg-gray-200 text-gray-800 text-sm font-medium rounded-full px-3 py-1 mr-2">
   skill stack
