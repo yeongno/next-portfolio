@@ -1,12 +1,6 @@
-import Head from 'next/head'
 import Hero from '../../components/home/hero'
 import Layout from '../../components/layout'
 import SkillStack from '../../components/home/skill-stack'
-import { useEffect } from 'react';
-import { useDispatch } from "react-redux";
-import { test1 } from '../../store/actions/test';
-import { DATABASE_ID, TOKEN } from '../../config';
-import getStaticProps1 from '@/hook/get-notion-db';
 export default function Home() {
   return (
     <Layout >
