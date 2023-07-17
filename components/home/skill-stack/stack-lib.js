@@ -8,6 +8,7 @@ export default function StackLib() {
         <img src="https://img.shields.io/badge/Scss-pink?style=for-the-badge&logo=sass&logoColor=white"></img>
         <img src="https://img.shields.io/badge/Jquery-orange?style=for-the-badge&logo=jquery&logoColor=white"></img>
         <img src="https://img.shields.io/badge/Redux-yellow?style=for-the-badge&logo=Redux&logoColor=white"></img>
+        <img src="https://img.shields.io/badge/Tailwind-blue?style=for-the-badge&logo=TailWindcss&logoColor=white"></img>
       </div>
     </div>
   )
